@@ -346,7 +346,7 @@ class WebsocketCoreAdapter(object):
     async def init(self):
         # 生成tls上下文
         ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-        ssl_context.load_cert_chain(config['api']['ssl_pem'], config['api']['ssl_key'])
+        ssl_context.load_cert_chain(config['ssl_crt'], config['ssl_key'])
 
         # websocket接口配置
         server_ip = config['datacenter']['server_ip']

@@ -450,8 +450,8 @@ async def main():
     print('即将运行http服务器{}:{}'.format(ip, port))
     loop.run_in_executor(None, functools.partial(app.run, config['api']['server_ip'],
                                                  config['api']['server_port'],
-                                                 ssl_context=(config['api']['ssl_pem'],
-                                                              config['api']['ssl_key'])))
+                                                 ssl_context=(config['ssl_crt'],
+                                                              config['ssl_key'])))
 
 
 if __name__ == '__main__':

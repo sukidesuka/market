@@ -12,8 +12,6 @@ default_config = {
     "api": {
         "server_ip": "0.0.0.0",
         "server_port": 10000,
-        "ssl_pem": "ssl.pem",
-        "ssl_key": "ssl.key"
     },
     "datacenter": {
         "server_ip": "0.0.0.0",
@@ -25,6 +23,9 @@ default_config = {
         "subscribe_client_ip": "xxxxxx",
         "subscribe_client_port": 10002
     },
+
+    "ssl_crt": "ssl.crt",
+    "ssl_key": "ssl.key",
 
     "nickname": "defaultName",  # 此服务器的默认昵称
     "self_ip": "us.pwp.today",  # 此服务器的连接地址
